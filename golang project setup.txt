@@ -1,0 +1,21 @@
+--------------------steps to Setup golang project -----------------------------
+1. Install go from official site.
+2. Create folder (work space directory).
+3. Go to environment variable > advance setting > GoPATH > select work directory (work space directory).
+4. your go path set successfully. type <go version> for testing.
+------------------------ How to make Project ? ------------------------------------
+
+4. Make a Project folder into the work space directory.
+5. go mod init <project name> // initialize with go dependencies of your project.
+
+
+
+----------------------------- Gin Server Framework --------------------------------
+1. install gin framework (go to officail website)
+2. install golang  extension in vscode
+3. install auto suggestion function.
+   i) VsCode click View -> Command Pallete or type Ctrl+Shift+P and type goinstall update/tools.
+   ii) check all dependencies and click OK. it will take time to download all dependencies.
+4. Start coding.
+5. go run <filename.go>
+ 
