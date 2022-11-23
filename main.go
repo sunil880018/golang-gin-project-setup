@@ -19,7 +19,7 @@ func main() {
 		p.Name = "Sunil Kumar"; // Note that p.Name becomes "name" in the JSON
 		p.Age = 24;
 
-		c.Bind(&p)
+		c.Bind(&p) // bind structure data 
          
 		// c.JSON() return output in json format
 		c.JSON(http.StatusOK, gin.H{ // gin.H is a shortcut for map[string]interface{}
