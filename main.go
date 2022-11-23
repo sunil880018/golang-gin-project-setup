@@ -8,10 +8,12 @@ type Person struct{
 }
 
 func main() {
-	r := gin.Default()
+	r := gin.Default() // Creates a gin router with default middleware:
+	                   // Default With the Logger and Recovery middleware already attached
+					   
 	r.GET("/ping", func(c *gin.Context) {
 
-		var p Person
+		var p Person // Person Object
 
 		p.Name = "Sunil Kumar";
 		p.Age = 24;
@@ -23,5 +25,6 @@ func main() {
 			"Age":p.Age,
 		})
 	})
-	r.Run() // listen and serve on 0.0.0.0:8080
+	r.Run() // By default it serves on :8080 unless a
+	        // PORT environment variable was defined.
 }
