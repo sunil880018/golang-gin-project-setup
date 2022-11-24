@@ -1,21 +1,44 @@
 --------------------steps to Setup golang project -----------------------------
+You can this blog
+# https://www.twilio.com/docs/usage/tutorials/how-to-set-up-your-go-and-gin-development-environment#install-go
+
 1. Install go from official site.
+
 2. Create folder (work space directory).
-3. Go to environment variable > advance setting > GoPATH > select work directory (work space directory).
-4. your go path set successfully. type <go version> for testing.
+
+3. Go to environment variable > advance setting > GoPATH > select work directory in which you want to start golang project development (work space directory).
+
+4. your go path set successfully. 
+
+5. type <go version> for testing.
+
 ------------------------ How to make Project ? ------------------------------------
 
 4. Make a Project folder into the work space directory.
-5. go mod init <project name> // initialize with go dependencies of your project.
+
+5. Start a new Go project:-
+Before starting any new Go project, you should run go mod init to create a new go.mod file for your project.
+Create a new empty directory in your development environment, enter it.
+   i) go mod init <project name> // initialize with go dependencies of your project.
 
 
 
 ----------------------------- Gin Server Framework --------------------------------
+
 1. install gin framework (go to officail website)
+
+   i) go get -u github.com/gin-gonic/gin
+    These commands tell go to add the gin module to your project's go.mod file. 
+    This makes the module available for use,if you ever want to install your module(s)again in the 
+    future -like on a production server -you can just run go mod download
+    
 2. install golang  extension in vscode
+
 3. install auto suggestion function.
    i) VsCode click View -> Command Pallete or type Ctrl+Shift+P and type goinstall update/tools.
    ii) check all dependencies and click OK. it will take time to download all dependencies.
+   
 4. Start coding.
+
 5. go run <filename.go>
  
