@@ -23,6 +23,15 @@ Create a new empty directory in your development environment, enter it.
 
 
 
+
+--------------- How to install project dependencies if you pull the project from the github ------------------------
+
+1.# Download all the dependencies
+ command : go get -d -v ./...
+2.# Install the package
+command : go install -v ./...
+
+
 ----------------------------- Gin Server Framework --------------------------------
 
 1. install gin framework (go to officail website)
